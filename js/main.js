@@ -59,8 +59,7 @@ function initMobileMenu() {
     toggleBtn.setAttribute('aria-expanded', 'true');
   };
 
-  const closeDrawer = (e) => {
-    if (e && e.preventDefault) e.preventDefault();
+  const closeDrawer = () => {
     drawer.classList.remove('is-open');
     drawer.classList.add('translate-x-full');
     setTimeout(() => {
@@ -76,9 +75,25 @@ function initMobileMenu() {
     toggleBtn.setAttribute('aria-expanded', 'false');
   };
 
-  toggleBtn.addEventListener('click', openDrawer);
-  if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
-  if (backdrop) backdrop.addEventListener('click', closeDrawer);
+  toggleBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    openDrawer();
+  });
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      closeDrawer();
+    });
+  }
+
+  if (backdrop) {
+    backdrop.addEventListener('click', (e) => {
+      e.preventDefault();
+      closeDrawer();
+    });
+  }
 
   // Close on Escape
   document.addEventListener('keydown', (e) => {
@@ -87,10 +102,17 @@ function initMobileMenu() {
     }
   });
 
-  // Close drawer when clicking a navigation link inside it (not CTA action buttons)
+  // When clicking navigation links inside mobile drawer, allow natural navigation
   const drawerNavLinks = drawer.querySelectorAll('nav a');
   drawerNavLinks.forEach((link) => {
-    link.addEventListener('click', closeDrawer);
+    link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+      // If it's an on-page hash link (#...) or points to the exact same page, close drawer
+      if (href && (href.startsWith('#') || href === window.location.pathname.split('/').pop())) {
+        closeDrawer();
+      }
+      // If it's another page, do NOT preventDefault - let the browser navigate immediately!
+    });
   });
 }
 
