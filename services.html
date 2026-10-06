@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>خدماتنا | شراء الأثاث والمكيفات والأغراض المستعملة بالمنطقة الشرقية</title>
+  <meta name="description" content="خدمات شراء الأثاث المنزلي، مكيفات سبليت وشباك، أثاث المكاتب وتجهيزات المحلات التجارية في الدمام والخبر والجبيل والأحساء. تواصل عبر واتساب 056 9904573.">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              DEFAULT: '#126B4F',
+              dark: '#0B4A38',
+              light: '#E8F5EF'
+            },
+            cta: {
+              whatsapp: '#25D366',
+              whatsappHover: '#20BA5A'
+            },
+            surface: {
+              main: '#F7F9F7',
+              card: '#FFFFFF'
+            },
+            ink: {
+              primary: '#17211D',
+              secondary: '#66736D',
+              border: '#E3E9E5'
+            }
+          },
+          fontFamily: {
+            arabic: ['"Noto Naskh Arabic"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    @media (min-width: 768px) {
+      #mobile-menu-drawer, #mobile-menu-backdrop { display: none !important; visibility: hidden !important; pointer-events: none !important; }
+    }
+  </style>
+</head>
+<body class="bg-surface-main text-ink-primary font-arabic antialiased pb-20 md:pb-0">
+
+  <!-- =========================================================================
+       GLOBAL HEADER
+       ========================================================================= -->
+  <header class="sticky-header py-4 border-b border-ink-border bg-white/95">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between">
+        
+        <a href="index.html" class="flex items-center gap-3 text-decoration-none group">
+          <div class="w-11 h-11 rounded-xl bg-brand flex items-center justify-center text-white shadow-md group-hover:bg-brand-dark transition-colors">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M19 7h-3V5a3 3 0 0 0-3-3h-2a3 3 0 0 0-3 3v2H5a3 3 0 0 0-3 3v9a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-9a3 3 0 0 0-3-3zm-9-2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2h-4V5zm10 14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v9z"/></svg>
+          </div>
+          <div>
+            <span class="block text-lg font-bold text-ink-primary leading-tight">شراء الأثاث والمكيفات المستعملة</span>
+            <span class="block text-xs text-brand font-medium">خدمة شراء محلية في المنطقة الشرقية</span>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-1 lg:gap-2" aria-label="القائمة الرئيسية">
+          <a href="index.html" class="nav-link">الرئيسية</a>
+          <a href="about.html" class="nav-link">من نحن</a>
+          <a href="services.html" class="nav-link active">خدماتنا</a>
+          <a href="gallery.html" class="nav-link">معرض الصور</a>
+          <a href="contact.html" class="nav-link">تواصل معنا</a>
+        </nav>
+
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="tel:+966569904573" class="text-sm font-semibold text-ink-primary hover:text-brand transition-colors flex items-center gap-1.5 py-2 px-3">
+            <svg class="w-4 h-4 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            <span>056 9904573</span>
+          </a>
+          <a href="https://wa.me/966569904573" target="_blank" rel="noopener noreferrer" class="btn-whatsapp text-sm py-2.5 px-4">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            <span>أرسل صور أغراضك</span>
+          </a>
+        </div>
+
+        <button id="mobile-menu-toggle" type="button" class="md:hidden hamburger-btn" aria-label="فتح القائمة الرئيسية" aria-expanded="false">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M4 7h16M4 12h16M4 17h16"/>
+          </svg>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop & Drawer -->
+  <div id="mobile-menu-backdrop" class="fixed inset-0 bg-[#0B4A38]/40 backdrop-blur-sm z-[999990] opacity-0 pointer-events-none transition-opacity duration-300 md:hidden"></div>
+  <div id="mobile-menu-drawer" class="fixed top-0 bottom-0 right-0 w-[85%] max-w-[360px] bg-white z-[999995] shadow-2xl p-6 transform translate-x-full invisible transition-all duration-300 ease-out flex flex-col justify-between overflow-y-auto md:hidden" role="dialog" aria-modal="true" aria-label="قائمة التنقل">
+    <div>
+      <div class="flex items-center justify-between pb-4 border-b border-ink-border mb-6">
+        <div>
+          <span class="block font-bold text-ink-primary text-base">شراء الأثاث والمكيفات</span>
+          <span class="block text-xs text-brand font-medium">الدمام والخبر والمنطقة الشرقية</span>
+        </div>
+        <button id="mobile-menu-close" type="button" class="w-9 h-9 rounded-lg flex items-center justify-center text-ink-secondary hover:text-ink-primary hover:bg-surface-main transition-colors" aria-label="إغلاق القائمة">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="flex flex-col gap-1.5" aria-label="قائمة الجوال">
+        <a href="index.html" class="nav-item-mobile">الرئيسية</a>
+        <a href="about.html" class="nav-item-mobile">من نحن</a>
+        <a href="services.html" class="nav-item-mobile active">خدماتنا</a>
+        <a href="gallery.html" class="nav-item-mobile">معرض الصور</a>
+        <a href="contact.html" class="nav-item-mobile">تواصل معنا</a>
+      </nav>
+    </div>
+
+    <!-- Direct WhatsApp & Phone Call Buttons inside Mobile Drawer -->
+    <div class="pt-6 border-t border-ink-border flex flex-col gap-3 mt-6">
+      <a href="https://wa.me/966569904573" target="_blank" rel="noopener noreferrer" class="btn-whatsapp w-full justify-center py-3 text-sm font-bold shadow-md">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        <span>أرسل صور أغراضك عبر واتساب</span>
+      </a>
+      <a href="tel:+966569904573" class="btn-outline w-full justify-center py-3 text-sm font-bold">
+        <svg class="w-4 h-4 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+        </svg>
+        <span>اتصل الآن: 056 9904573</span>
+      </a>
+    </div>
+  </div>
+
+
+  <!-- =========================================================================
+       HERO: SERVICES
+       ========================================================================= -->
+  <section class="py-14 sm:py-20 bg-gradient-to-b from-white to-surface-main border-b border-ink-border">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+      
+      <span class="badge-green">نطاق خدمات الشراء</span>
+
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-ink-primary leading-tight">
+        نشتري مجموعة متنوعة من الأغراض المستعملة
+      </h1>
+
+      <p class="text-base sm:text-lg text-ink-secondary max-w-3xl mx-auto leading-relaxed">
+        إذا كانت لديك أغراض منزلية أو مكتبية أو تجارية لم تعد تحتاجها، يمكنك التواصل معنا وإرسال صورها وتفاصيلها عبر واتساب لنناقش معك إمكانية الشراء والخطوة التالية.
+      </p>
+
+      <div class="pt-4 flex flex-wrap justify-center gap-4">
+        <a href="https://wa.me/966569904573" target="_blank" rel="noopener noreferrer" class="btn-whatsapp py-3 px-7 text-sm font-semibold">
+          <span>أرسل صور الأغراض عبر واتساب</span>
+        </a>
+        <a href="tel:+966569904573" class="btn-outline py-3 px-7 text-sm font-semibold">
+          <span>اتصل بنا: 056 9904573</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       DETAILED SERVICES LIST
+       ========================================================================= -->
+  <section class="py-16 md:py-24 bg-white border-b border-ink-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
+      
+      <!-- Service 1: Used Furniture -->
+      <div id="furniture" class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-6 space-y-5">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-light text-brand text-xs font-semibold">
+            <span>الخدمة الأولى</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-bold text-ink-primary leading-snug">
+            شراء الأثاث المنزلي المستعمل
+          </h2>
+          <p class="text-sm sm:text-base text-ink-secondary leading-relaxed">
+            نشتري مختلف قطع الأثاث المنزلي الصالحة للاستخدام من الفلل والشقق السكنية في الدمام والخبر وكافة مدن المنطقة الشرقية. نساعدك في تفريغ صالات المعيشة وغرف النوم واستبدال الأثاث القديم بقطع جديدة دون الحاجة لإرهاق نفسك في البحث عن مشترين أفراد.
+          </p>
+          
+          <div class="bg-surface-main p-5 rounded-2xl border border-ink-border">
+            <h3 class="font-bold text-sm text-ink-primary mb-3">تشمل مشتريات الأثاث المنزلي:</h3>
+            <ul class="grid grid-cols-2 gap-2 text-xs sm:text-sm text-ink-secondary">
+              <li class="flex items-center gap-2"><span class="text-brand">●</span> أطقم الكنب والموديلات المودرن</li>
+              <li class="flex items-center gap-2"><span class="text-brand">●</span> المجالس العربية وأثاث الاستقبال</li>
+              <li class="flex items-center gap-2"><span class="text-brand">●</span> غرف النوم الزوجية والماستر</li>
+              <li class="flex items-center gap-2"><span class="text-brand">●</span> غرف نوم الأطفال والأسرة الفردية</li>
+              <li class="flex items-center gap-2"><span class="text-brand">●</span> طاولات الطعام الفاخرة والكراسي</li>
+              <li class="flex items-center gap-2"><span class="text-brand">●</span> خزائن الملابس ودواليب التخزين</li>
+            </ul>
+          </div>
+
+          <div class="pt-2">
+            <a href="https://wa.me/966569904573?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D9%84%D8%AF%D9%8A%20%D8%A3%D8%AB%D8%A7%D8%AB%20%D9%85%D9%86%D8%B2%D9%84%D9%8A%20%D9%85%D8%B3%D8%AA%D8%B9%D9%85%D9%84%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A8%D9%8A%D8%B9%D9%87" target="_blank" rel="noopener noreferrer" class="btn-whatsapp py-3 px-6 text-sm">
+              <span>أرسل صور الأثاث عبر واتساب</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="rounded-3xl overflow-hidden shadow-lg border border-ink-border">
+            <img src="assets/images/furniture-majlis.jpg" alt="شراء أثاث منزلي ومجالس مستعملة في الشرقية" class="w-full h-80 sm:h-96 object-cover">
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 2: Used Air Conditioners -->
+      <div id="ac" class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-6 order-2 lg:order-1">
+          <div class="rounded-3xl overflow-hidden shadow-lg border border-ink-border">
+            <img src="assets/images/ac-units.jpg" alt="شراء مكيفات مستعملة سبليت وشباك" class="w-full h-80 sm:h-96 object-cover">
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 order-1 lg:order-2 space-y-5">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-light text-brand text-xs font-semibold">
+            <span>الخدمة الثانية</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-bold text-ink-primary leading-snug">
+            شراء المكيفات المستعملة
+          </h2>
+          <p class="text-sm sm:text-base text-ink-secondary leading-relaxed">
+            نشتري أجهزة التكييف المستعملة بحالتها العاملة والمقبولة، سواء قررت ترقية نظام التكييف بالكامل إلى أجهزة انفرتر موفرة للطاقة، أو كنت تخلي شقة أو مقراً تجارياً وترغب في بيع وحدات التبريد القائمة.
+          </p>
+          
+          <div class="bg-surface-main p-5 rounded-2xl border border-ink-border">
+            <h3 class="font-bold text-sm text-ink-primary mb-3">أنواع المكيفات التي نتعامل معها:</h3>
+            <ul class="grid grid-cols-2 gap-2 text-xs sm:text-sm text-ink-secondary">
+              <li class="flex items-center gap-2"><span class="text-brand">●</span> مكيفات سبليت جدارية (١٨، ٢٤، ٣٠ وحدة)</li>
+              <li class="flex items-center gap-2"><span class="text-brand">●</span> مكيفات شباك بحالة تشغيلية جيدة</li>
+              <li class="flex items-center gap-2"><span class="text-brand">●</span> مكيفات دولابية قائمة للمجالس والقاعات</li>
+              <li class="flex items-center gap-2"><span class="text-brand">●</span> كميات مكيفات من المباني والمجمعات</li>
+              <li class="flex items-center gap-2"><span class="text-brand">●</span> وحدات تبريد المكاتب والشركات</li>
+              <li class="flex items-center gap-2"><span class="text-brand">●</span> أجهزة تكييف قابلة للصيانة والاستفادة</li>
+            </ul>
+          </div>
+
+          <div class="pt-2">
+            <a href="https://wa.me/966569904573?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D9%84%D8%AF%D9%8A%20%D9%85%D9%83%D9%8A%D9%81%D8%A7%D8%AA%20%D9%85%D8%B3%D8%AA%D8%B9%D9%85%D9%84%D8%A9%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A8%D9%8A%D8%B9%D9%87%D8%A7" target="_blank" rel="noopener noreferrer" class="btn-whatsapp py-3 px-6 text-sm">
+              <span>تواصل عبر واتساب لشراء المكيفات</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 3: Office Furniture -->
+      <div id="office" class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-6 space-y-5">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-light text-brand text-xs font-semibold">
+            <span>الخدمة الثالثة</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-bold text-ink-primary leading-snug">
+            شراء أثاث المكاتب والشركات
+          </h2>
+          <p class="text-sm sm:text-base text-ink-secondary leading-relaxed">
+            عند تغيير المقر الإداري، أو تقليص مساحات العمل، أو تجديد بيئة المكتب بتصاميم حديثة، نتيح للمؤسسات والشركات حلاً سريعاً لشراء أثاثها المكتبي دفعة واحدة، مع الالتزام بالمواعيد المحددة وعدم إرباك سير الأعمال.
+          </p>
+          
+          <div class="bg-surface-main p-5 rounded-2xl border border-ink-border">
+            <h3 class="font-bold text-sm text-ink-primary mb-3">تشمل مشتريات الأثاث المكتبي:</h3>
+            <ul class="grid grid-cols-2 gap-2 text-xs sm:text-sm text-ink-secondary">
+              <li class="flex items-center gap-2"><span class="text-brand">●</span> مكاتب إدارية وتنفيذية للمدراء</li>
+              <li class="flex items-center gap-2"><span class="text-brand">●</span> كراسي مكتبية هيدروليكية وطبية</li>
+              <li class="flex items-center gap-2"><span class="text-brand">●</span> طاولات اجتماعات بمقاسات متعددة</li>
+              <li class="flex items-center gap-2"><span class="text-brand">●</span> خزائن ودواليب حفظ الأوراق والملفات</li>
+              <li class="flex items-center gap-2"><span class="text-brand">●</span> كاونترات ومكاتب الاستقبال (ريسبشن)</li>
+              <li class="flex items-center gap-2"><span class="text-brand">●</span> كنب واستراحات انتظار المراجعين</li>
+            </ul>
+          </div>
+
+          <div class="pt-2">
+            <a href="https://wa.me/966569904573?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D9%84%D8%AF%D9%8A%20%D8%A3%D8%AB%D8%A7%D8%AB%20%D9%85%D9%83%D8%AA%D8%A8%D9%8A%20%D9%85%D8%B3%D8%AA%D8%B9%D9%85%D9%84%20%D9%84%D9%84%D8%A8%D9%8A%D8%B9" target="_blank" rel="noopener noreferrer" class="btn-whatsapp py-3 px-6 text-sm">
+              <span>أرسل صور أثاث المكتب عبر واتساب</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="rounded-3xl overflow-hidden shadow-lg border border-ink-border">
+            <img src="assets/images/office-meeting.jpg" alt="شراء أثاث مكاتب وطاولات اجتماعات مستعملة" class="w-full h-80 sm:h-96 object-cover">
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 4: Shop Contents -->
+      <div id="shops" class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-6 order-2 lg:order-1">
+          <div class="rounded-3xl overflow-hidden shadow-lg border border-ink-border">
+            <img src="assets/images/shop-shelves.jpg" alt="شراء أرفف وتجهيزات محلات تجارية مستعملة" class="w-full h-80 sm:h-96 object-cover">
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 order-1 lg:order-2 space-y-5">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-light text-brand text-xs font-semibold">
+            <span>الخدمة الرابعة</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-bold text-ink-primary leading-snug">
+            شراء محتويات وتجهيزات المحلات
+          </h2>
+          <p class="text-sm sm:text-base text-ink-secondary leading-relaxed">
+            نساعد أصحاب المتاجر ومنافذ البيع في التخلص من أعباء إخلاء المحل عند انتهاء عقد الإيجار أو تعديل النشاط التجاري أو تجديد الهوية البصرية، وذلك بشراء الأرفف والتجهيزات الصالحة لإعادة الاستخدام.
+          </p>
+          
+          <div class="bg-surface-main p-5 rounded-2xl border border-ink-border">
+            <h3 class="font-bold text-sm text-ink-primary mb-3">تشمل تجهيزات المحلات:</h3>
+            <ul class="grid grid-cols-2 gap-2 text-xs sm:text-sm text-ink-secondary">
+              <li class="flex items-center gap-2"><span class="text-brand">●</span> أرفف حديدية لعرض البضائع والتموينات</li>
+              <li class="flex items-center gap-2"><span class="text-brand">●</span> كاونترات الدفع ومكاتب المحاسبين</li>
+              <li class="flex items-center gap-2"><span class="text-brand">●</span> فترينات زجاجية وطاولات عرض المنتجات</li>
+              <li class="flex items-center gap-2"><span class="text-brand">●</span> ستاندات تعليق الملابس والإكسسوارات</li>
+              <li class="flex items-center gap-2"><span class="text-brand">●</span> خزائن ودواليب حفظ المخزون</li>
+              <li class="flex items-center gap-2"><span class="text-brand">●</span> تجهيزات صالونات ومحلات تجارية متنوعة</li>
+            </ul>
+          </div>
+
+          <div class="pt-2">
+            <a href="https://wa.me/966569904573?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D9%84%D8%AF%D9%8A%20%D8%AA%D8%AC%D9%87%D9%8A%D8%B2%D8%A7%D8%AA%20%D9%85%D8%AD%D9%84%20%D9%85%D8%B3%D8%AA%D8%B9%D9%85%D9%84%D8%A9%20%D9%84%D9%84%D8%A8%D9%8A%D8%B9" target="_blank" rel="noopener noreferrer" class="btn-whatsapp py-3 px-6 text-sm">
+              <span>أرسل صور تجهيزات المحل</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 5: Mixed Quantities -->
+      <div id="mixed" class="p-8 sm:p-12 rounded-3xl bg-brand text-white">
+        <div class="max-w-3xl space-y-4">
+          <span class="inline-block py-1 px-3.5 rounded-full bg-white/10 text-xs font-semibold border border-white/20">
+            الخدمة الخامسة
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-bold leading-tight">
+            شراء كميات متنوعة ومختلطة من الأغراض
+          </h2>
+          <p class="text-white/85 text-sm sm:text-base leading-relaxed">
+            كثيراً ما يكون لدى العميل مجموعة مختلطة من الأغراض في موقع واحد: أثاث منزلي مع مكيفات سبليت، أو مكاتب إدارية مع شاشات وأجهزة تكييف، أو تجهيزات محل مع دواليب تخزين. نتعامل مع هذه الحالات بمرونة ووفق تقييم شامل حسب نوع الأغراض وحالتها وتفاصيلها الواقعية، دون ادعاء شراء كل شيء عشوائياً.
+          </p>
+          <div class="pt-4 flex flex-wrap gap-4">
+            <a href="https://wa.me/966569904573" target="_blank" rel="noopener noreferrer" class="btn-whatsapp py-3 px-6 text-sm">
+              <span>تواصل بخصوص كمية متنوعة</span>
+            </a>
+            <a href="tel:+966569904573" class="bg-white text-ink-primary hover:bg-brand-light font-semibold text-sm py-3 px-6 rounded-full transition-colors">
+              <span>اتصال مباشر: 056 9904573</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       PROCESS: أرسل → ناقش → قيّم → اتفق → أكمل الإجراءات
+       ========================================================================= -->
+  <section class="py-16 md:py-24 bg-surface-main border-b border-ink-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-3xl mx-auto text-center mb-16">
+        <span class="badge-green mb-3">مسار واضح</span>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-ink-primary mb-4">
+          كيف تسير الخدمة من البداية حتى الاستلام؟
+        </h2>
+        <p class="text-ink-secondary text-base leading-relaxed">
+          مسار متسلسل من خمس مراحل يضمن لك الراحة والاطمئنان والوضوح الكامل:
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+        
+        <div class="p-5 rounded-2xl bg-white border border-ink-border text-center reveal-on-scroll">
+          <div class="w-10 h-10 rounded-full bg-brand text-white flex items-center justify-center font-bold mx-auto mb-3">١</div>
+          <h3 class="font-bold text-ink-primary text-base mb-1">أرسل</h3>
+          <p class="text-xs text-ink-secondary leading-relaxed">التقط صوراً واضحة وأرسلها عبر واتساب مع تحديد المدينة والحي.</p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-white border border-ink-border text-center reveal-on-scroll">
+          <div class="w-10 h-10 rounded-full bg-brand text-white flex items-center justify-center font-bold mx-auto mb-3">٢</div>
+          <h3 class="font-bold text-ink-primary text-base mb-1">ناقش</h3>
+          <p class="text-xs text-ink-secondary leading-relaxed">نراجع التفاصيل معك ونتعرف على حالة الأغراض وموقع العقار.</p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-white border border-ink-border text-center reveal-on-scroll">
+          <div class="w-10 h-10 rounded-full bg-brand text-white flex items-center justify-center font-bold mx-auto mb-3">٣</div>
+          <h3 class="font-bold text-ink-primary text-base mb-1">قيّم</h3>
+          <p class="text-xs text-ink-secondary leading-relaxed">نطرح تقييماً منطقياً وعادلاً يستند لجودة الأغراض ومدى الاستفادة منها.</p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-white border border-ink-border text-center reveal-on-scroll">
+          <div class="w-10 h-10 rounded-full bg-brand text-white flex items-center justify-center font-bold mx-auto mb-3">٤</div>
+          <h3 class="font-bold text-ink-primary text-base mb-1">اتفق</h3>
+          <p class="text-xs text-ink-secondary leading-relaxed">نتفق على موعد المعاينة والاستلام وآلية النقل المناسبة للموقع.</p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-white border border-ink-border text-center reveal-on-scroll">
+          <div class="w-10 h-10 rounded-full bg-brand text-white flex items-center justify-center font-bold mx-auto mb-3">٥</div>
+          <h3 class="font-bold text-ink-primary text-base mb-1">أكمل الإجراءات</h3>
+          <p class="text-xs text-ink-secondary leading-relaxed">تكتمل عملية الشراء والاستلام وتستعيد مساحتك بكل سهولة ونظام.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       SERVICE AREAS
+       ========================================================================= -->
+  <section class="py-16 md:py-24 bg-white border-b border-ink-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="badge-green mb-3">المدن المستهدفة</span>
+      <h2 class="text-2xl sm:text-3xl font-bold text-ink-primary mb-4">
+        نشتري الأثاث والمكيفات في ٧ مدن رئيسية بالشرقية
+      </h2>
+      <p class="text-ink-secondary text-sm sm:text-base max-w-2xl mx-auto mb-10 leading-relaxed">
+        أينما كنت في حاضرة الدمام أو واحة الأحساء أو محافظة الجبيل، فريقنا على مقربة منك للتنسيق السريع:
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
+        <span class="px-5 py-2.5 rounded-xl bg-surface-main border border-ink-border font-bold text-ink-primary text-sm">الدمام</span>
+        <span class="px-5 py-2.5 rounded-xl bg-surface-main border border-ink-border font-bold text-ink-primary text-sm">الخبر</span>
+        <span class="px-5 py-2.5 rounded-xl bg-surface-main border border-ink-border font-bold text-ink-primary text-sm">الظهران</span>
+        <span class="px-5 py-2.5 rounded-xl bg-surface-main border border-ink-border font-bold text-ink-primary text-sm">الجبيل</span>
+        <span class="px-5 py-2.5 rounded-xl bg-surface-main border border-ink-border font-bold text-ink-primary text-sm">القطيف</span>
+        <span class="px-5 py-2.5 rounded-xl bg-surface-main border border-ink-border font-bold text-ink-primary text-sm">الأحساء</span>
+        <span class="px-5 py-2.5 rounded-xl bg-surface-main border border-ink-border font-bold text-ink-primary text-sm">الهفوف</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       SERVICES FAQ
+       ========================================================================= -->
+  <section class="py-16 md:py-24 bg-surface-main border-b border-ink-border">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-12">
+        <span class="badge-green mb-3">استفسارات الخدمات</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-ink-primary mb-4">أسئلة شائعة حول خدمات الشراء</h2>
+      </div>
+
+      <div class="faq-container space-y-4">
+        
+        <div class="faq-item">
+          <button class="faq-header" type="button" aria-expanded="false">
+            <span>هل تشترون أثاث الغرفة الواحدة أم تشترطون منزلاً كاملاً؟</span>
+            <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content">
+            <p class="text-sm text-ink-secondary leading-relaxed">
+              نشتري كلاً من الأطقم المفردة (مثل طقم كنب أو غرفة نوم واحدة أو مكيفين) ومحتويات الشقق والفلل الكاملة، وفقاً لحالة الأغراض ونظافتها وموقع العقار.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-header" type="button" aria-expanded="false">
+            <span>هل يتوجب فك المكيفات قبل إرسال صورها؟</span>
+            <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content">
+            <p class="text-sm text-ink-secondary leading-relaxed">
+              لا داعي لفك المكيفات مسبقاً. يمكنك تصويرها وهي مركبة على الجدار وتصوير الوحدة الخارجية مع ملصق البيانات، ويتم التنسيق المشترك حول آلية الفك بعد الاتفاق.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-header" type="button" aria-expanded="false">
+            <span>هل تشترون الأثاث المكتبي من الشركات والمؤسسات؟</span>
+            <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content">
+            <p class="text-sm text-ink-secondary leading-relaxed">
+              نعم، نشتري محتويات الشركات والمكاتب الإدارية والعيادات ومراكز التدريب، بما في ذلك المكاتب وكراسي العمل وخزائن الملفات وطاولات الاجتماعات.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-header" type="button" aria-expanded="false">
+            <span>هل تفرضون رسوماً على المعاينة أو مراجعة الصور؟</span>
+            <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content">
+            <p class="text-sm text-ink-secondary leading-relaxed">
+              إرسال الصور والاستشارة المبدئية ومناقشة تفاصيل التقييم عبر واتساب تتم بدون أي رسوم، وهدفها التعرف على ملاءمة الأغراض لنطاق شرائنا قبل أي خطوة لاحقة.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       SERVICES FINAL CTA
+       ========================================================================= -->
+  <section class="py-16 md:py-20 bg-brand text-white text-center">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold">
+        لديك أكثر من نوع من الأغراض وتريد بيعها؟
+      </h2>
+      <p class="text-white/85 text-base max-w-2xl mx-auto leading-relaxed">
+        أرسل لنا الصور عبر واتساب وسنساعدك في معرفة الخطوة التالية بكل سهولة ووضوح.
+      </p>
+      <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="https://wa.me/966569904573" target="_blank" rel="noopener noreferrer" class="btn-whatsapp py-3.5 px-8 text-sm">
+          <span>أرسل الصور عبر واتساب</span>
+        </a>
+        <a href="tel:+966569904573" class="bg-white text-ink-primary hover:bg-brand-light font-semibold text-sm py-3.5 px-8 rounded-full transition-colors">
+          <span>اتصال: 056 9904573</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       GLOBAL FOOTER
+       ========================================================================= -->
+  <footer class="bg-white border-t border-ink-border pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-ink-border">
+        
+        <div class="lg:col-span-4 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg bg-brand flex items-center justify-center text-white">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 7h-3V5a3 3 0 0 0-3-3h-2a3 3 0 0 0-3 3v2H5a3 3 0 0 0-3 3v9a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-9a3 3 0 0 0-3-3zm-9-2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2h-4V5zm10 14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v9z"/></svg>
+            </div>
+            <span class="font-bold text-lg text-ink-primary">شراء الأثاث والمكيفات</span>
+          </div>
+          <p class="text-sm text-ink-secondary leading-relaxed">
+            خدمة شراء متخصصة في شراء الأثاث والمكيفات المستعملة بالمنطقة الشرقية. نحن نشتري ولا نبيع، ونهدف لتسهيل بيع الأغراض الفائضة عبر تواصل مباشر وسريع.
+          </p>
+          <div class="text-xs text-brand font-semibold pt-1">
+            نحن نشتري، ولا نبيع • المنطقة الشرقية
+          </div>
+        </div>
+
+        <div class="lg:col-span-3 space-y-3">
+          <h3 class="text-sm font-bold text-ink-primary uppercase tracking-wider">ما الذي نشتريه؟</h3>
+          <ul class="space-y-2 text-sm text-ink-secondary">
+            <li><a href="services.html#furniture" class="hover:text-brand transition-colors">شراء الأثاث المنزلي المستعمل</a></li>
+            <li><a href="services.html#ac" class="hover:text-brand transition-colors">شراء مكيفات سبليت وشباك</a></li>
+            <li><a href="services.html#office" class="hover:text-brand transition-colors">شراء أثاث المكاتب والشركات</a></li>
+            <li><a href="services.html#shops" class="hover:text-brand transition-colors">شراء تجهيزات ومحتويات المحلات</a></li>
+            <li><a href="services.html#mixed" class="hover:text-brand transition-colors">شراء كميات الأثاث المتنوعة</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-2 space-y-3">
+          <h3 class="text-sm font-bold text-ink-primary uppercase tracking-wider">مدن الخدمة</h3>
+          <ul class="space-y-1.5 text-sm text-ink-secondary">
+            <li>الدمام</li>
+            <li>الخبر</li>
+            <li>الظهران</li>
+            <li>الجبيل</li>
+            <li>القطيف</li>
+            <li>الأحساء</li>
+            <li>الهفوف</li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-3 space-y-3">
+          <h3 class="text-sm font-bold text-ink-primary uppercase tracking-wider">روابط وتواصل</h3>
+          <ul class="space-y-2 text-sm text-ink-secondary">
+            <li><a href="index.html" class="hover:text-brand transition-colors">الرئيسية</a></li>
+            <li><a href="about.html" class="hover:text-brand transition-colors">من نحن</a></li>
+            <li><a href="services.html" class="hover:text-brand transition-colors">خدماتنا</a></li>
+            <li><a href="gallery.html" class="hover:text-brand transition-colors">معرض الصور</a></li>
+            <li><a href="contact.html" class="hover:text-brand transition-colors">تواصل معنا</a></li>
+          </ul>
+          <div class="pt-2 space-y-1.5">
+            <a href="https://wa.me/966569904573" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-ink-primary hover:text-brand flex items-center gap-1.5">
+              <span>واتساب:</span> <span dir="ltr">056 9904573</span>
+            </a>
+            <a href="tel:+966569904573" class="text-xs font-semibold text-ink-primary hover:text-brand flex items-center gap-1.5">
+              <span>اتصال:</span> <span dir="ltr">056 9904573</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-ink-secondary gap-4">
+        <div>
+          جميع الحقوق محفوظة © 2026 • خدمة شراء الأثاث والمكيفات المستعملة بالمنطقة الشرقية
+        </div>
+        <div class="text-[11px] text-ink-secondary/80">
+          خدمة شراء موجهة لسكان ومؤسسات الدمام، الخبر، الظهران، الجبيل، القطيف، والأحساء
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <!-- =========================================================================
+       STICKY CONTACT ICONS (RIGHT SIDE BOTTOM + GLOW)
+       ========================================================================= -->
+  <div class="sc-sticky-icons" role="region" aria-label="أيقونات التواصل السريع">
+    <div class="elementor-widget-container">
+      <div class="elementor-social-icons-wrapper">
+        <!-- WhatsApp Icon with Glow -->
+        <div class="elementor-grid-item">
+          <a href="https://wa.me/966569904573" target="_blank" rel="noopener noreferrer" class="elementor-social-icon elementor-social-icon-whatsapp" aria-label="تواصل عبر واتساب">
+            <svg class="w-7 h-7 fill-white" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          </a>
+        </div>
+        <!-- Phone Call Icon with Glow -->
+        <div class="elementor-grid-item">
+          <a href="tel:+966569904573" class="elementor-social-icon elementor-social-icon-phone" aria-label="اتصال هاتفي مباشر">
+            <svg class="w-6 h-6 fill-none stroke-white" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       SCROLL TO TOP BUTTON (LEFT SIDE BOTTOM)
+       ========================================================================= -->
+  <button id="scroll-to-top-btn" class="scroll-to-top-btn" type="button" aria-label="العودة إلى أعلى الصفحة">
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <!-- Mobile Bottom Bar -->
+  
+
+  <script src="js/main.js"></script>
+</body>
+</html>
